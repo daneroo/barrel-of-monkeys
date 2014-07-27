@@ -39,6 +39,7 @@ for pattern in patterns(chainOfMonkeys):
 
 *Hint:*
 *Brute force approach*; 
+
 In order to determine the frequency of each pattern,
 we could simply count the number of occurences by traversing the entire chain again.
 
@@ -52,4 +53,5 @@ for pattern in patterns(chainOfMonkeys):
 ```
 
 This approach has a few drawbacks. 
-* If a pattern occurs more than once, we will actually scan the entire chain multiple times counting the same pattern. Secondly this has a complexity of `O(n*n)`, and we can probably do better.
+* If a pattern occurs more than once, we will actually scan the entire chain multiple times counting the same pattern.
+* Secondly this has a complexity of `O(n*n)`, and we can probably do better.
