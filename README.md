@@ -85,7 +85,8 @@ If we wanted to avoid traversing the dictionary of pattern occurences, we could 
 This problem has analogues in bioinformatics; where we might be interested in finding commonly occurring nucleotide patterns in a genome sequence. Think `GATTACA-AGTCGGTCGAACGA`
 
 ### *Final Solution:*
-Our final solution has **O(n)** complexity in time. In terms of space, the maximal size of the dictionary of counts is the smaller of **O(4<sup>k</sup>)** and **O(n)**. (*4<sup>k</sup> is the number of possible patterns of length k*).
+Our final solution has **O(n)** complexity in time. In terms of space, the maximal size of the dictionary of counts is the smaller of **O(4<sup>k</sup>)** and **O(n)**. 
+*4<sup>k</sup> is the number of possible patterns of length k*.
 
 ```python
 chainOfMonkeys = 'BRGYYGRBYGYRGRBYGBYGRBYGBGBGRY'
