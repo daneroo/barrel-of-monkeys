@@ -51,9 +51,10 @@ for pattern in patterns(chainOfMonkeys):
     print 'Found %d occurences of %s' % (count,pattern)
 ```
 
-This approach has a few drawbacks. 
+This approach has a few drawbacks.
+
 * If a pattern occurs more than once, we will actually scan the entire chain multiple times counting the same pattern.
-* Secondly this has a complexity of `O(n<sup>2</sup>)`, and we can probably do better.
+* Secondly this has a complexity of **O(n<sup>2</sup>)**, and we can probably do better.
 
 #### *Hint:*
 If we used a dictionary, with the patterns as keys, we could count the number of occurences as we perform a single traversal.
@@ -84,7 +85,7 @@ If we wanted to avoid traversing the dictionary of pattern occurences, we could 
 This problem has analogues in bioinformatics; where we might be interested in finding commonly occurring nucleotide patterns in a genome sequence. Think `GATTACA-AGTCGGTCGAACGA`
 
 ### *Final Solution:*
-Our final solution has `O(n)` complexity in time. In terms of space the maximal size of the dictionary of counts is `min(O(4<sub>k</sup>),O(n))`
+Our final solution has **O(n)** complexity in time. In terms of space, the maximal size of the dictionary of counts is the smaller of **O(4<sup>k</sup>)** and **O(n)**. (*4<sup>k</sup> is the number of possible patterns of length k*).
 
 ```python
 chainOfMonkeys = 'BRGYYGRBYGYRGRBYGBYGRBYGBGBGRY'
